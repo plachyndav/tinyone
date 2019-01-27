@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackplugin = require('copy-webpack-plugin');
 const fs = require('fs');
-const generateTemplates = ()=> {
+const generateTemplates = () => {
     const files = fs.readdirSync(path.resolve(__dirname, './src'));
     const htmls = files.filter(file => /\.html$/.test(file));
     return htmls.map(template => new HtmlWebpackPlugin({
@@ -10,6 +10,18 @@ const generateTemplates = ()=> {
         template: path.resolve(__dirname, `./src/${template}`),
     }));
 }
+
+const entryFiles = [
+    path.resolve(__dirname, './src/js/index.js'),
+    path.resolve(__dirname, './src/styles/normalize.css'),
+    path.resolve(__dirname, './src/styles/general.css')
+];
+const generateEntryFiles = (arrayToExtend) => {
+    const files = fs.readdirSync(path.resolve(__dirname, './src/styles'));
+    const styles = files.filter(file => /\.scss$/.test(file));
+    styles.forEach(style => arrayToExtend.push(path.resolve(__dirname, `./src/styles/${style}`)));
+}
+generateEntryFiles(entryFiles);
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -25,13 +37,14 @@ module.exports = {
             ]
         )
     ],
-    entry: [
-        path.resolve(__dirname, './src/js/index.js'),
-        path.resolve(__dirname, './src/styles/normalize.css'),
-        path.resolve(__dirname, './src/styles/style.scss')
-        // './js/index.js',
-        // './styles/style.scss'
-    ],
+    // entry: [
+    //     path.resolve(__dirname, './src/js/index.js'),
+    //     path.resolve(__dirname, './src/styles/normalize.css'),
+    //     path.resolve(__dirname, './src/styles/style.scss')
+    //     // './js/index.js',
+    //     // './styles/style.scss'
+    // ],
+    entry: entryFiles,
     output: {
         filename: 'js/[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
