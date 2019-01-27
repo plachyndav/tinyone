@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="tiny" />
-        <meta name="description" content="tiny tinyone inspire" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="tiny">
+        <meta name="description" content="tiny tinyone inspire">
         <title>Tinyone</title>
     </head>
 
@@ -31,7 +31,38 @@
                         alt="tinyone"
                     />
                 </a>
-                <div class="page-header__social-links  social-links"></div>
+                <div class="page-header__socials  socials">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a
+                                href=""
+                                class="socials__link  socials__link--facebook"
+                                >Facebook link</a
+                            >
+                        </li>
+                        <li class="socials__item">
+                            <a
+                                href=""
+                                class="socials__link  socials__link--tweeter"
+                                >Tweeter link</a
+                            >
+                        </li>
+                        <li class="socials__item">
+                            <a
+                                href=""
+                                class="socials__link  socials__link--google"
+                                >Google+ link</a
+                            >
+                        </li>
+                        <li class="socials__item">
+                            <a
+                                href=""
+                                class="socials__link  socials__link--pinterest"
+                                >Pinterest link</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section class="page-header__slider slider">
@@ -83,7 +114,29 @@
                         </p>
                     </li>
                 </ul>
-                <p class="slider__icons"></p>
+                <p class="slider__icons">
+                    <img
+                        class="slider__icons-image  slider__icons-image--apple"
+                        width=""
+                        height=""
+                        src=""
+                        alt="apple logo"
+                    />
+                    <img
+                        class="slider__icons-image  slider__icons-image--android"
+                        width=""
+                        height=""
+                        src=""
+                        alt="android logo"
+                    />
+                    <img
+                        class="slider__icons-image  slider__icons-image--windows"
+                        width=""
+                        height=""
+                        src=""
+                        alt="windows logo"
+                    />
+                </p>
                 <img
                     class="slider__device-image"
                     width=""
@@ -114,7 +167,7 @@
                     height=""
                     src=""
                     alt="device"
-                />
+                >
                 <ul class="page-main__feature-list  feature-list">
                     <li
                         class="feature-list__item  feature-list__item--responsive"
@@ -177,34 +230,40 @@
                 Praesent vitae eros eget tellus tristique bibendum. Donec rutrum
                 sed sem quis venenatis.
             </p>
-            <form action="" class="page-footer__form"></form>
-            <div class="page-footer__social-links  social-links">
-                <ul class="social-links__list">
-                    <li class="social-links__item">
+            <form class="page-footer__form  form" action="#" method="post">
+                <label class="visually-hidden" for="subscription-email"
+                    >email for subscribe</label
+                >
+                <input
+                    class="form__email"
+                    type="email"
+                    name="subscription-email"
+                    placeholder="Enter your email to update"
+                >
+                <button class="button form__button" type="submit">Submit</button>
+            <div class="page-footer__socials  socials">
+                <ul class="socials__list">
+                    <li class="socials__item">
                         <a
                             href=""
-                            class="social-links__link  social-links__link--facebook"
+                            class="socials__link  socials__link--facebook"
                             >Facebook link</a
                         >
                     </li>
-                    <li class="social-links__item">
-                        <a
-                            href=""
-                            class="social-links__link  social-links__link--tweeter"
+                    <li class="socials__item">
+                        <a href="" class="socials__link  socials__link--tweeter"
                             >Tweeter link</a
                         >
                     </li>
-                    <li class="social-links__item">
-                        <a
-                            href=""
-                            class="social-links__link  social-links__link--google"
+                    <li class="socials__item">
+                        <a href="" class="socials__link  socials__link--google"
                             >Google+ link</a
                         >
                     </li>
-                    <li class="social-links__item">
+                    <li class="socials__item">
                         <a
                             href=""
-                            class="social-links__link  social-links__link--pinterest"
+                            class="socials__link  socials__link--pinterest"
                             >Pinterest link</a
                         >
                     </li>
@@ -213,14 +272,14 @@
             <div class="page-footer__wrapper">
                 <div class="page-footer__contacts contacts">
                     <p class="contacts__text">
-                        HALOVIETNAM LTD<br />
-                        66, Dang Van ngu, Dong Da<br />
-                        Hanoi, Vietnam
+                        HALOVIETNAM LTD<br>
+                        66, Dang Van ngu, Dong Da<br>
+                        Hanoi, Vietnam<br>
                         <a
                             class="contacts__email"
                             href="mailto:contact@halovietnam.com"
                             >contact@halovietnam.com</a
-                        >
+                        ><br>
                         <a class="contacts__phone" href="tel:+84435149182"
                             >+844 35149182</a
                         >
