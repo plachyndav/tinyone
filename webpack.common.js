@@ -10,18 +10,18 @@ const generateTemplates = () => {
         template: path.resolve(__dirname, `./src/${template}`),
     }));
 }
-
-const entryFiles = [
-    path.resolve(__dirname, './src/js/index.js'),
-    path.resolve(__dirname, './src/styles/normalize.css'),
-    path.resolve(__dirname, './src/styles/general.css')
-];
-const generateEntryFiles = (arrayToExtend) => {
-    const files = fs.readdirSync(path.resolve(__dirname, './src/styles'));
-    const styles = files.filter(file => /\.scss$/.test(file));
-    styles.forEach(style => arrayToExtend.push(path.resolve(__dirname, `./src/styles/${style}`)));
-}
-generateEntryFiles(entryFiles);
+//                                                                           uncomment
+// const entryFiles = [
+//     path.resolve(__dirname, './src/js/index.js'),
+//     path.resolve(__dirname, './src/styles/normalize.css'),
+//     path.resolve(__dirname, './src/styles/general.css')
+// ];
+// const generateEntryFiles = (arrayToExtend) => {
+//     const files = fs.readdirSync(path.resolve(__dirname, './src/styles'));
+//     const styles = files.filter(file => /\.scss$/.test(file));
+//     styles.forEach(style => arrayToExtend.push(path.resolve(__dirname, `./src/styles/${style}`)));
+// }
+// generateEntryFiles(entryFiles);
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -37,6 +37,10 @@ module.exports = {
             ]
         )
     ],
+    entry: [
+        path.resolve(__dirname, './src/js/index.js'),
+        path.resolve(__dirname, './src/styles/style.scss')
+    ],
     // entry: [
     //     path.resolve(__dirname, './src/js/index.js'),
     //     path.resolve(__dirname, './src/styles/normalize.css'),
@@ -44,7 +48,7 @@ module.exports = {
     //     // './js/index.js',
     //     // './styles/style.scss'
     // ],
-    entry: entryFiles,
+    // entry: entryFiles,                               //uncomment
     output: {
         filename: 'js/[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
