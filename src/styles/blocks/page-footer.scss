@@ -2,6 +2,12 @@
     background-color: $page-color-black;
 }
 
+.page-footer__wrapper {
+    width: 992px;
+    margin: 0 auto;
+    padding: 0 31px;
+}
+
 .page-footer__slogan {
     color: $page-color-yellow;
     font-size: 32px;
