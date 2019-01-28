@@ -1,0 +1,26 @@
+.page-footer {
+    background-color: $page-color-black;
+}
+
+.page-footer__slogan {
+    color: $page-color-yellow;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.page-footer__description {
+    color: $font-color-grey;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.page-footer__links {
+    color: #ffffff;
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+}
