@@ -4,9 +4,20 @@
     font-weight: 700;
     line-height: 20px;
     text-decoration: none;
+}
 
-    a {
-        color: inherit;
-        text-decoration: inherit;
+.main-nav__list {
+    position: absolute;
+}
+
+@media(min-width: 992px) {
+    .main-nav__list {
+        position: static;
+
+        display: flex;
+    }
+
+    .main-nav__toggle {
+        display: none;
     }
 }

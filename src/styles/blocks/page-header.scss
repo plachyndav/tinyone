@@ -1,9 +1,39 @@
 .page-header {
+    min-height: 742px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
     background-color: $page-color-yellow;
+}
+
+.page-header__base {
+    margin-bottom: 210px;
 }
 
 .page-header__wrapper {
     width: 992px;
     margin: 0 auto;
     padding: 0 31px;
+}
+
+.page-header__base {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media(min-width: 992px) {
+    .page-header__base {
+        margin-bottom: 70px;
+    }
+
+    .page-header__logo {
+        order: -1;
+    }
+
+    .page-header__socials {
+        display: none;
+    }
+
+
 }

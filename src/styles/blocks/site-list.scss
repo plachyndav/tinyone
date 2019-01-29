@@ -1,0 +1,20 @@
+.site-list {
+    margin: 0;
+
+    list-style: none;
+}
+
+.site-list__item {
+    margin-bottom: 8px;
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+}
+
+@media(min-width: 992px) {
+    .site-list__item {
+        margin-left: 70px;
+    }
+}
