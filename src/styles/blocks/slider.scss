@@ -60,12 +60,20 @@
 .slider__icons {
     width: 280px;
     margin: 0 auto;
-    margin-bottom: 150px;
 }
 
 .slider__toggles {
     width: 60px;
     margin: 0 auto;
+}
+
+.slider__notice {
+    width: 395px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+    color: #ffffff;
 }
 
 @media(min-width: 992px) {
@@ -95,5 +103,9 @@
         line-height: 20px;
         color: #555555;
         text-align: left;
+    }
+
+    .slider__notice {
+        display: none;
     }
 }
