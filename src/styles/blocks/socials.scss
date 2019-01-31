@@ -2,13 +2,73 @@
     min-width: 165px;
 }
 
+.socials--black {
+    min-width: 145px;
+}
+
 .socials__list {
     display: flex;
     margin: 0;
+    padding: 0;
 
     list-style: none;
 }
 
+.socials__list--black {
+    margin-top: 10px;
+    height: 20px;
+}
+
 .socials__item {
-    margin-left: 22px;
+    margin-left: 33px;
+}
+
+.socials__item--black {
+    margin-right: 22px;
+
+    padding: 0;
+}
+
+.socials__link {
+    padding: 18px;
+
+    background-repeat: no-repeat;
+}
+
+.socials__link--black {
+    padding: 10px;
+
+    background-repeat: no-repeat;
+}
+
+.socials__link--facebook {
+    background-image: url("../../img/facebook-ico.png");
+}
+
+.socials__link--twitter {
+    background-image: url("../../img/twitter-ico.png");
+}
+
+.socials__link--google {
+    background-image: url("../../img/google-ico.png");
+}
+
+.socials__link--pinterest {
+    background-image: url("../../img/pinterest-ico.png");
+}
+
+.socials__link--facebook--black {
+    background-image: url("../../img/facebook-b-ico.png");
+}
+
+.socials__link--twitter--black {
+    background-image: url("../../img/twitter-b-ico.png");
+}
+
+.socials__link--google--black {
+    background-image: url("../../img/google-b-ico.png");
+}
+
+.socials__link--pinterest--black {
+    background-image: url("../../img/pinterest-b-ico.png");
 }

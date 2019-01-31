@@ -73,6 +73,11 @@
 @media(min-width: 992px) {
     .page-footer__socials {
         display: block;
+        width: 245px;
+        margin: 0 auto;
         margin-bottom: 130px;
+
+        font-size: 0px;
+        line-height: 0;
     }
 }
