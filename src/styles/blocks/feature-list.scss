@@ -14,7 +14,6 @@
 .feature-list__item {
     width: 275px;
     padding-left: 75px;
-
 }
 
 .feature-list__title {
@@ -36,5 +35,36 @@
 @media(min-width: 992px) {
     .feature-list {
         margin-left: 0;
+        padding-top: 45px;
+    }
+
+    .feature-list__item--responsive {
+        background-image: url(../../img/responsive.png);
+        background-repeat: no-repeat;
+    }
+
+    .feature-list__item--layered {
+        background-image: url(../../img/layered.png);
+        background-repeat: no-repeat;
+    }
+
+    .feature-list__item--icons {
+        background-image: url(../../img/icons.png);
+        background-repeat: no-repeat;
+    }
+
+    .feature-list__item--html {
+        background-image: url(../../img/html.png);
+        background-repeat: no-repeat;
+    }
+
+    .feature-list__item--email {
+        background-image: url(../../img/email.png);
+        background-repeat: no-repeat;
+    }
+
+    .feature-list__item--free {
+        background-image: url(../../img/free.png);
+        background-repeat: no-repeat;
     }
 }
