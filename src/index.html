@@ -16,15 +16,15 @@
             <section class="page-header__base">
                 <h2 class="visually-hidden">Page header menu</h2>
                 <nav class="page-header__main-nav  main-nav">
-                    <button class="main-nav__toggle" type="button">Menu</button>
-                    <ul class="main-nav__list  site-list">
-                        <li class="site-list__item"><a href="">Features</a></li>
-                        <li class="site-list__item"><a href="">Support</a></li>
-                        <li class="site-list__item"><a href="">Blog</a></li>
+                    <button class="main-nav__toggle js-button" type="button"><span class="visually-hidden">Menu<span></button>
+                    <ul class="main-nav__list  site-list main-nav__list--closed js-menu">
+                        <li class="site-list__item"><a href="#features">Features</a></li>
+                        <li class="site-list__item"><a href="#footer">Support</a></li>
+                        <li class="site-list__item"><a href="#footer">Blog</a></li>
                     </ul>
                 </nav>
                 <a class="page-header__logo logo">
-                    <img class="logo__image" width="43" height="43" src="#" alt="tinyone">
+                    <img class="logo__image" width="43" height="43" src="./img/fingerprint.png" alt="tinyone">
                     <h1 class="logo__title">tinyone</h1>
                 </a>
                 <div class="page-header__socials  socials  socials--black">
@@ -110,7 +110,7 @@
     </header>
 
 
-    <main class="page-main">
+    <main class="page-main" id="features">
         <h2 class="page-main__title">Tinyone features</h2>
         <p class="page-main__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -172,7 +172,7 @@
     </main>
 
 
-    <footer class="page-footer">
+    <footer class="page-footer" id="footer">
         <div class="page-footer__wrapper">
             <b class="page-footer__slogan">Keep in touch with us</b>
             <p class="page-footer__description">
