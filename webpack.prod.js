@@ -40,7 +40,6 @@ module.exports = merge(common, {
                         }
                     },
                     'css-loader',
-                    'resolve-url-loader',
                     {
                         loader: 'postcss-loader',
                         options: {
@@ -50,8 +49,14 @@ module.exports = merge(common, {
                             ]
                         }
                     },
-                    'sass-loader'
-                  ]
+                    'resolve-url-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: 'inline'
+                        }
+                    }
+                ]
             }
         ]
     }
